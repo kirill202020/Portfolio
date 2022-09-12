@@ -127,6 +127,10 @@ body {
   width: 380px;
 }
 
+.small-me {
+  display: none;
+}
+
 .about {
   padding: 40px 35px;
 }
@@ -427,5 +431,47 @@ body {
   }
   body.lock {
     overflow: hidden;
+  }
+}
+@media screen and (max-width: 576px) {
+  .hero__img {
+    display: none;
+  }
+  .small-me {
+    background-size: contain;
+    flex-basis: 50%;
+    margin: 0 auto;
+    display: block;
+  }
+  .small-me__img {
+    height: 100%;
+    width: 75%;
+    background: url("./img/me.png") left 20% center no-repeat;
+    background-size: contain;
+  }
+  .hero {
+    text-align: center;
+  }
+  .hero__title {
+    font-size: 44px;
+    margin-bottom: 40px;
+  }
+  .hero__descr {
+    font-size: 20px;
+  }
+  .hero__btn {
+    margin-bottom: 50px;
+  }
+  .about span {
+    font-size: 13px;
+  }
+  .about h2 {
+    font-size: 21px;
+  }
+  .about__cardzone {
+    display: flex;
+  }
+  .about__cardzone .card {
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

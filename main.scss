@@ -173,6 +173,9 @@ body{
         }
 }
 
+.small-me{
+    display: none;
+}
 
 
 
@@ -618,4 +621,64 @@ body{
     body.lock{
         overflow: hidden;
     }
+}
+
+
+@media screen and (max-width: 576px){
+    .hero__img{
+        display: none;
+    }
+    .small-me{
+        background-size: contain;
+        flex-basis: 50%;
+        margin: 0 auto;
+        display: block;
+
+        &__img{
+            height: 100%;
+            width: 75%;
+            background: url('./img/me.png') left 20% center no-repeat;  
+            background-size: contain;
+            // background-position: left 50% bottom 48%;
+        }
+    }
+
+
+    .hero{
+        text-align: center;
+
+
+        &__title{
+            font-size: 44px;
+            margin-bottom: 40px;
+        }
+
+        &__descr{
+            font-size: 20px;
+        }
+
+        &__btn{
+            margin-bottom: 50px;
+        }
+    }
+    
+
+    .about{
+        span{
+            font-size: 13px;
+        }
+
+        h2{
+            font-size: 21px;
+        }
+
+
+        &__cardzone{
+            display: flex;
+            .card{
+                width: 100%;
+            }
+        }
+    }
+
 }
