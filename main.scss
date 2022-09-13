@@ -675,10 +675,11 @@ body{
 
         &__cardzone{
             display: flex;
-            .card{
+            flex-direction: column;
+            gap: 50px;
+            .card, .about__cardzone{
                 width: 100%;
             }
         }
     }
-
 }

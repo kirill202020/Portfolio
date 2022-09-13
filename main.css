@@ -470,6 +470,8 @@ body {
   }
   .about__cardzone {
     display: flex;
+    flex-direction: column;
+    gap: 50px;
   }
   .about__cardzone .card {
     width: 100%;
