@@ -256,7 +256,9 @@ body{
 
     }
 }
-
+.works__small-var__project{
+    display: none;
+}
 
 .project{
     display: flex;
@@ -351,6 +353,10 @@ body{
     width: 100%;
     margin-top: 140px;
 
+    h2{
+        margin-bottom: 10px;
+    }
+
     &__zone{
         justify-content: space-around;
         display: flex;
@@ -429,8 +435,8 @@ body{
 
 
         .footer__links__second-link{
-            background: url(./img/icon-telegram.svg) no-repeat center left 0px;
-            background-size: 38px;
+            background: url(./img/icon-telegram.svg) no-repeat center left -6px;
+            background-size: 43px;
 
         }   
     }
@@ -621,6 +627,12 @@ body{
     body.lock{
         overflow: hidden;
     }
+
+    .footer{
+        &__links{
+            gap: 10px;
+        }
+    }
 }
 
 
@@ -639,10 +651,14 @@ body{
             width: 75%;
             background: url('./img/me.png') left 20% center no-repeat;  
             background-size: contain;
+            margin-left: 52px;
             // background-position: left 50% bottom 48%;
         }
     }
 
+    .logo, .header{
+        margin-left: -34px;
+    }
 
     .hero{
         text-align: center;
@@ -680,6 +696,52 @@ body{
             .card, .about__cardzone{
                 width: 100%;
             }
+        }
+    }
+
+
+
+    .works{
+        &__all__sizes{
+            h3{
+                margin-top: 20px;
+                font-size: 25px;
+            }
+
+            p{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+
+        text-align: center;
+        &__project{
+            display: none;
+        }
+
+
+
+        &__small-var__project{
+            display: block;
+            margin-bottom: 60px;
+            img{
+                width: 100%;
+            }
+
+            .project__description{
+                text-align: left;
+            }
+        }
+    }
+
+
+
+    .footer{
+        &__links{
+            gap: 0px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
         }
     }
 }

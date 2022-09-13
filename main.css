@@ -187,6 +187,10 @@ body {
   margin-bottom: 60px;
 }
 
+.works__small-var__project {
+  display: none;
+}
+
 .project {
   display: flex;
   margin-top: 100px;
@@ -246,6 +250,9 @@ body {
   width: 100%;
   margin-top: 140px;
 }
+.contact h2 {
+  margin-bottom: 10px;
+}
 .contact__zone {
   justify-content: space-around;
   display: flex;
@@ -302,8 +309,8 @@ body {
   background-size: 30px;
 }
 .footer__links .footer__links__second-link {
-  background: url(./img/icon-telegram.svg) no-repeat center left 0px;
-  background-size: 38px;
+  background: url(./img/icon-telegram.svg) no-repeat center left -6px;
+  background-size: 43px;
 }
 
 @media screen and (max-width: 1100px) {
@@ -432,6 +439,9 @@ body {
   body.lock {
     overflow: hidden;
   }
+  .footer__links {
+    gap: 10px;
+  }
 }
 @media screen and (max-width: 576px) {
   .hero__img {
@@ -448,6 +458,10 @@ body {
     width: 75%;
     background: url("./img/me.png") left 20% center no-repeat;
     background-size: contain;
+    margin-left: 52px;
+  }
+  .logo, .header {
+    margin-left: -34px;
   }
   .hero {
     text-align: center;
@@ -473,7 +487,37 @@ body {
     flex-direction: column;
     gap: 50px;
   }
-  .about__cardzone .card {
+  .about__cardzone .card, .about__cardzone .about__cardzone {
     width: 100%;
+  }
+  .works {
+    text-align: center;
+  }
+  .works__all__sizes h3 {
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  .works__all__sizes p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .works__project {
+    display: none;
+  }
+  .works__small-var__project {
+    display: block;
+    margin-bottom: 60px;
+  }
+  .works__small-var__project img {
+    width: 100%;
+  }
+  .works__small-var__project .project__description {
+    text-align: left;
+  }
+  .footer__links {
+    gap: 0px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=main.css.map */
