@@ -745,3 +745,14 @@ body{
         }
     }
 }
+
+
+@media screen and (max-width: 400px){
+    .footer__logo{
+        display: none;
+    }
+
+    textarea{
+        width: 238px;
+    }
+}
