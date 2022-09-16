@@ -262,7 +262,8 @@ body {
 }
 .contact__img {
   flex-basis: 40%;
-  background: #000;
+  background: url("./img/window-for-wear.png") no-repeat;
+  background-size: contain;
 }
 .contact__form {
   max-width: 400px;

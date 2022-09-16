@@ -367,7 +367,9 @@ body{
 
     &__img{
         flex-basis: 40%;
-        background: #000;
+        background://url('./img/me.png') left 20% top 10% no-repeat,
+        url('./img/window-for-wear.png') no-repeat;
+        background-size: contain;
     }
 
 
