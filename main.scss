@@ -628,6 +628,17 @@ body{
         overflow: hidden;
     }
 
+    .project__footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        .project-btn{
+            padding: 17px;
+        }
+    }
+
+
     .footer{
         &__links{
             gap: 10px;
@@ -641,10 +652,12 @@ body{
         display: none;
     }
     .small-me{
+        max-height: 70%;
         background-size: contain;
         flex-basis: 50%;
         margin: 0 auto;
         display: block;
+        margin-bottom: -60px;
 
         &__img{
             height: 100%;
@@ -734,6 +747,12 @@ body{
         }
     }
 
+    .project__footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+
 
 
     .footer{
@@ -748,11 +767,54 @@ body{
 
 
 @media screen and (max-width: 400px){
+    .small-me{
+        max-height: 445px;
+        margin-bottom: -30px;
+    }
+
+    .hero{
+        &__descr{
+            font-size: 20px;
+            width: 242px;
+        }
+
+
+        &__title{
+            font-size: 33px;
+            line-height: 50px;
+        }
+    }
+
+    .about{
+        &-me{
+            h2{
+                font-size: 18px;
+                line-height: 40px;
+            }
+        }
+    }
+
     .footer__logo{
         display: none;
     }
 
     textarea{
-        width: 238px;
+        width: 90%;
+    }
+
+    .project__footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        gap: 3px;
+
+        .project__description{
+            font-size: 12px;
+        }
+
+        .project-btn{
+            padding: 10px;
+            font-size: 13px;
+        }
     }
 }

@@ -439,6 +439,15 @@ body {
   body.lock {
     overflow: hidden;
   }
+  .project__footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .project__footer .project-btn {
+    padding: 17px;
+  }
   .footer__links {
     gap: 10px;
   }
@@ -448,10 +457,12 @@ body {
     display: none;
   }
   .small-me {
+    max-height: 70%;
     background-size: contain;
     flex-basis: 50%;
     margin: 0 auto;
     display: block;
+    margin-bottom: -60px;
   }
   .small-me__img {
     height: 100%;
@@ -514,6 +525,11 @@ body {
   .works__small-var__project .project__description {
     text-align: left;
   }
+  .project__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
   .footer__links {
     gap: 0px;
     text-align: left;
@@ -522,10 +538,39 @@ body {
   }
 }
 @media screen and (max-width: 400px) {
+  .small-me {
+    max-height: 445px;
+    margin-bottom: -30px;
+  }
+  .hero__descr {
+    font-size: 20px;
+    width: 242px;
+  }
+  .hero__title {
+    font-size: 33px;
+    line-height: 50px;
+  }
+  .about-me h2 {
+    font-size: 18px;
+    line-height: 40px;
+  }
   .footer__logo {
     display: none;
   }
   textarea {
-    width: 238px;
+    width: 90%;
+  }
+  .project__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 3px;
+  }
+  .project__footer .project__description {
+    font-size: 12px;
+  }
+  .project__footer .project-btn {
+    padding: 10px;
+    font-size: 13px;
   }
 }/*# sourceMappingURL=main.css.map */
