@@ -121,11 +121,11 @@ body{
 .hero{
     margin-top: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 
     &__text{
-        flex-basis: 45%;
+        flex-basis: 40%;
     }
 
 
@@ -138,15 +138,20 @@ body{
 
     &__descr{
         font-size: 22px;
-        line-height: 33px;
+        line-height: 40px;
         margin-bottom: 40px;
     }
 
     &__btn{
-        border: none;
+        font-size: 16px;
         font-weight: 700;
         border-radius: 8px;
         padding: 18px 25px;
+
+        border: none;
+        background: #fff;
+        color: #054244;
+
         text-transform: uppercase;
         cursor: pointer;
     }
@@ -249,7 +254,21 @@ body{
 
 
 .works{
-    margin-top: 50px;
+    margin-top: 100px;
+
+    .portfolio__span{
+        display: block;
+        text-align: center;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: #FF5E69;
+        margin-bottom: 20px;
+    }
+
     h2{
         text-align: center;
         margin-bottom: 60px;
@@ -268,13 +287,14 @@ body{
 
 
     &-first{
-        margin-top: 70px;
+        margin-top: 80px;
     }
 
 
 
     &__left-side{
         flex-basis: 30%;
+        margin-left: 50px;
         
         
         h3{
@@ -282,7 +302,7 @@ body{
             font-size: 54px;
             line-height: 59px;
             letter-spacing: 1px;
-            margin-bottom: 10px;
+            margin-bottom: 40px;
         }
 
 
@@ -299,6 +319,7 @@ body{
 
     &__right-side{
         flex-basis: 65%;
+        margin-right: 40px;
 
 
         img{
@@ -314,7 +335,6 @@ body{
     &__footer{
         display: flex;
         justify-content: space-between;
-        align-items: center;
         font-weight: 700;
         font-size: 18px;
         line-height: 20px;
@@ -324,18 +344,29 @@ body{
 
 
     &-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 263px;
+        height: 55px;
         padding: 15px 40px;
         background: #fff;
-        color: #000;
+        color: #054244;
         text-decoration: none;
         border-radius: 8px;
+        font-size: 22px;
     }
 
 
 
     &__description{
+        
         p{
-            margin-top: 15px;
+            margin-bottom: 15px;  
+        }
+
+        &:last-child{
+            margin: 0;
         }
     }
 }
@@ -353,8 +384,15 @@ body{
     width: 100%;
     margin-top: 140px;
 
-    h2{
-        margin-bottom: 10px;
+    span{
+        display: block;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: #FF5E69;
+        margin-bottom: 20px;
     }
 
     &__zone{
@@ -391,6 +429,12 @@ body{
         }
 
         button{
+            background: #fff;
+            color: #054244;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: 700;
+            border: none;
             padding: 17px;
             border-radius: 8px;
             cursor: pointer;

@@ -7,3 +7,5 @@ menuBtn.addEventListener('click', function(){
     menu.classList.toggle('active');
     lock.classList.toggle('lock');
 })
+
+

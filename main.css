@@ -82,11 +82,11 @@ body {
 .hero {
   margin-top: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 .hero__text {
-  flex-basis: 45%;
+  flex-basis: 40%;
 }
 .hero__title {
   font-size: 64px;
@@ -96,14 +96,17 @@ body {
 }
 .hero__descr {
   font-size: 22px;
-  line-height: 33px;
+  line-height: 40px;
   margin-bottom: 40px;
 }
 .hero__btn {
-  border: none;
+  font-size: 16px;
   font-weight: 700;
   border-radius: 8px;
   padding: 18px 25px;
+  border: none;
+  background: #fff;
+  color: #054244;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -180,7 +183,19 @@ body {
 }
 
 .works {
-  margin-top: 50px;
+  margin-top: 100px;
+}
+.works .portfolio__span {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #FF5E69;
+  margin-bottom: 20px;
 }
 .works h2 {
   text-align: center;
@@ -197,17 +212,18 @@ body {
   gap: 5%;
 }
 .project-first {
-  margin-top: 70px;
+  margin-top: 80px;
 }
 .project__left-side {
   flex-basis: 30%;
+  margin-left: 50px;
 }
 .project__left-side h3 {
   font-weight: 700;
   font-size: 54px;
   line-height: 59px;
   letter-spacing: 1px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 .project__left-side span {
   font-weight: 700;
@@ -217,6 +233,7 @@ body {
 }
 .project__right-side {
   flex-basis: 65%;
+  margin-right: 40px;
 }
 .project__right-side img {
   width: 100%;
@@ -227,21 +244,29 @@ body {
 .project__footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: 1px;
 }
 .project-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 263px;
+  height: 55px;
   padding: 15px 40px;
   background: #fff;
-  color: #000;
+  color: #054244;
   text-decoration: none;
   border-radius: 8px;
+  font-size: 22px;
 }
 .project__description p {
-  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.project__description:last-child {
+  margin: 0;
 }
 
 .contact {
@@ -250,8 +275,15 @@ body {
   width: 100%;
   margin-top: 140px;
 }
-.contact h2 {
-  margin-bottom: 10px;
+.contact span {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #FF5E69;
+  margin-bottom: 20px;
 }
 .contact__zone {
   justify-content: space-around;
@@ -280,6 +312,12 @@ body {
   border-radius: 8px;
 }
 .contact__form button {
+  background: #fff;
+  color: #054244;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
   padding: 17px;
   border-radius: 8px;
   cursor: pointer;
